@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works – Explain My Scan</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-black text-white px-6 py-4 flex justify-between items-center">
+    <a href="/" class="flex items-center space-x-2">
+      <img src="https://cloudstoryco.github.io/explainmyscanstatic/images/ems-white2.png" alt="Logo" class="h-8">
+      <span class="font-semibold text-xl">Explain My Scan</span>
+    </a>
+    <nav class="space-x-4 text-sm sm:text-base">
+      <a href="/" class="hover:underline">Home</a>
+      <a href="/#why" class="hover:underline">Why</a>
+      <a href="/how-it-works.html" class="underline font-semibold">How it Works</a>
+      <a href="/login.html" class="bg-white text-black px-4 py-1 rounded shadow hover:bg-gray-100 transition">Login</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto py-12 px-6">
+    <h1 class="text-4xl font-bold mb-6">How It Works</h1>
+
+    <p class="mb-6 text-lg">
+      This page walks you through how to use the service and answers common questions.
+    </p>
+
+    <hr class="border-gray-300 my-6">
+
+    <h2 class="text-2xl font-semibold mb-4">How do I use the service?</h2>
+    <ol class="list-decimal list-inside space-y-2 mb-6 text-gray-800">
+      <li><strong>Sign in</strong> using your email (no password needed)</li>
+      <li><strong>Upload</strong> your medical scan (JPEG, PNG, or DICOM)</li>
+      <li>Our AI analyzes and gives:
+        <ul class="list-disc list-inside ml-6">
+          <li>Key findings</li>
+          <li>Diagnostic insights</li>
+          <li>A plain-English explanation</li>
+        </ul>
+      </li>
+      <li><strong>Download or print</strong> the report — all within seconds</li>
+    </ol>
+
+    <h2 class="text-xl font-semibold mt-10 mb-2">Sample Report</h2>
+    <p class="mb-6">👉 <a class="text-blue-600 underline" href="https://cloudstoryco.github.io/explainmyscanstatic/ExplainMyScan_Analysis_Example.pdf" target="_blank">Download Sample PDF Report</a></p>
+
+    <h2 class="text-2xl font-semibold mb-4">Do I get free usage?</h2>
+    <ul class="list-disc list-inside mb-6 space-y-2 text-gray-800">
+      <li><strong>1 free scan analysis per month</strong></li>
+      <li>It resets based on your last upload date</li>
+      <li>No action needed — quota applied automatically</li>
+      <li>Unused free scans do <strong>not</strong> roll over</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Want more reports?</h2>
+    <p class="mb-4">You can buy credits via the <strong>Payment</strong> page. Just choose your amount, currency is auto-detected, and pay via Stripe.</p>
+
+    <h2 class="text-2xl font-semibold mt-10 mb-4">How are rates calculated?</h2>
+    <p class="mb-2">Rates are auto-adjusted based on your IP location. Here’s a sample:</p>
+
+    <div class="overflow-x-auto mb-6">
+      <table class="min-w-full text-sm border border-gray-300">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="p-2 border">Country</th>
+            <th class="p-2 border">Currency</th>
+            <th class="p-2 border">Cost per Credit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="p-2 border">United States</td><td class="p-2 border">USD</td><td class="p-2 border">1.00</td></tr>
+          <tr><td class="p-2 border">Singapore</td><td class="p-2 border">SGD</td><td class="p-2 border">1.00</td></tr>
+          <tr><td class="p-2 border">Malaysia</td><td class="p-2 border">MYR</td><td class="p-2 border">3.00</td></tr>
+          <tr><td class="p-2 border">India</td><td class="p-2 border">INR</td><td class="p-2 border">60.00</td></tr>
+          <tr><td class="p-2 border">Indonesia</td><td class="p-2 border">IDR</td><td class="p-2 border">10,000.00</td></tr>
+          <tr><td class="p-2 border">Thailand</td><td class="p-2 border">USD</td><td class="p-2 border">28.80</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mb-6 text-sm text-gray-500">💡 You’ll always see your local cost before checkout.</p>
+
+    <h2 class="text-2xl font-semibold mb-4">Is my payment secure?</h2>
+    <ul class="list-disc list-inside space-y-2 mb-6 text-gray-800">
+      <li>🔒 Encrypted and PCI-compliant (Stripe Level 1)</li>
+      <li>✅ Processed securely via Stripe — no card data stored</li>
+      <li>🌐 End-to-end HTTPS encryption</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mb-4">What happens to my data?</h2>
+    <ul class="list-disc list-inside space-y-2 mb-6 text-gray-800">
+      <li><strong>Zero storage by default</strong>: scans and results are not saved</li>
+      <li><strong>No tracking or profiling</strong>: we don’t use your data for training</li>
+      <li><strong>Enterprise options</strong> available for private deployments</li>
+    </ul>
+
+    <p class="mb-6 text-sm text-gray-600">
+      ✅ Individuals: full privacy<br>
+      🏥 Clinics: custom storage, region-specific compliance (GDPR, HIPAA)
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4">Other Questions?</h2>
+    <p>If you need help, just email us at <a href="mailto:support@explainmyscan.com" class="text-blue-600 underline">support@explainmyscan.com</a></p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center text-sm py-4 mt-10">
+    &copy; 2025 Explain My Scan. All rights reserved.
+    <div class="mt-2">
+      <a href="/terms.html" class="underline hover:text-gray-300">Terms</a> · 
+      <a href="/privacy.html" class="underline hover:text-gray-300">Privacy</a> · 
+      <a href="/about.html" class="underline hover:text-gray-300">About</a>
+    </div>
+  </footer>
+
+</body>
+</html>
