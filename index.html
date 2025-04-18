@@ -9,48 +9,58 @@
 <body class="bg-white text-gray-800">
 
   <!-- Header -->
-  <header class="bg-black text-white px-6 py-4 flex justify-between items-center">
-    <a href="/" class="flex items-center space-x-2">
-      <img src="https://cloudstoryco.github.io/explainmyscanstatic/images/ems-white2.png" alt="Logo" class="h-8">
-      <span class="font-semibold text-xl">Explain My Scan</span>
-    </a>
-    <nav class="space-x-4">
-      <a href="/" class="hover:underline">Home</a>
-      <a href="#why" class="hover:underline">Why</a>
-      <a href="/how-it-works.html" class="hover:underline">How it Works</a>
-      <a href="/login.html" class="bg-white text-black px-4 py-1 rounded shadow hover:bg-gray-100 transition">Login</a>
-    </nav>
+  <header class="bg-black text-white">
+    <div class="max-w-screen-md mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="flex items-center space-x-2">
+        <img src="https://cloudstoryco.github.io/explainmyscanstatic/images/ems-white2.png" alt="Logo" class="h-6 sm:h-8 w-auto">
+        <span class="text-lg sm:text-xl font-semibold">Explain My Scan</span>
+      </a>
+      <nav class="hidden sm:flex space-x-4 text-sm sm:text-base">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/#why" class="hover:underline">Why</a>
+        <a href="/how-it-works.html" class="hover:underline">How it Works</a>
+        <a href="/login.html" class="bg-white text-black px-3 py-1 rounded hover:bg-gray-100 transition">Login</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="text-center py-12 px-4">
-    <h1 class="text-4xl font-bold mb-4">Instant explanation for your medical scan</h1>
-    <img src="https://cloudstoryco.github.io/explainmyscanstatic/images/undraw_medical-research_pze7.svg" alt="Medical Research Illustration" class="mx-auto mb-6 w-[300px] md:w-[400px]">
-    <p class="max-w-2xl mx-auto text-lg">
-      <strong>Explain My Scan</strong> is your secure, AI-powered assistant for medical image interpretation. <br />
-      Upload your scan and receive a detailed diagnostic report — fast, private, and easy.<br />
+  <!-- Main Content -->
+  <main class="max-w-screen-md mx-auto px-4 py-12 text-center">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-6">Instant explanation for your medical scan</h1>
+
+    <img src="https://cloudstoryco.github.io/explainmyscanstatic/images/undraw_medical-research_pze7.svg"
+         alt="Medical Research Illustration"
+         class="mx-auto w-60 sm:w-80 mb-6">
+
+    <p class="text-lg mb-8 leading-relaxed">
+      <strong>Explain My Scan</strong> is your secure, AI-powered assistant for medical image interpretation.<br>
+      Upload your scan and receive a detailed diagnostic report — fast, private, and easy.<br>
       <em>Second opinion within seconds. It's free!</em>
     </p>
-  </section>
+  </main>
 
   <!-- Why Section -->
   <section id="why" class="bg-gray-50 py-12 px-6">
-    <h2 class="text-3xl font-semibold text-center mb-6">Why Explain My Scan?</h2>
-    <div class="max-w-3xl mx-auto space-y-4 text-center">
-      <p>🔒 Private and secure: We never store your scans.</p>
-      <p>⚡ Fast and convenient: Get a second opinion in seconds.</p>
-      <p>📱 No app needed: Works on mobile, tablet, or desktop.</p>
-      <p>🧠 Powered by state-of-the-art AI models trained on medical data.</p>
+    <div class="max-w-screen-md mx-auto text-center">
+      <h2 class="text-2xl font-semibold mb-6">Why Explain My Scan?</h2>
+      <ul class="space-y-3 text-gray-800 text-base sm:text-lg">
+        <li>🔒 Private and secure: We never store your scans.</li>
+        <li>⚡ Fast and convenient: Get a second opinion in seconds.</li>
+        <li>📱 No app needed: Works on mobile, tablet, or desktop.</li>
+        <li>🧠 Powered by state-of-the-art AI models trained on medical data.</li>
+      </ul>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-white text-center text-sm py-4 mt-10">
-    &copy; 2025 Explain My Scan. All rights reserved.
-    <div class="mt-2">
-      <a href="/terms.html" class="underline hover:text-gray-300">Terms</a> · 
-      <a href="/privacy.html" class="underline hover:text-gray-300">Privacy</a> · 
-      <a href="/about.html" class="underline hover:text-gray-300">About</a>
+  <footer class="bg-black text-white text-center text-sm py-6">
+    <div class="max-w-screen-md mx-auto px-4">
+      <p class="mb-2">&copy; 2025 Explain My Scan. All rights reserved.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 text-gray-300">
+        <a href="/terms.html" class="hover:underline">Terms</a>
+        <a href="/privacy.html" class="hover:underline">Privacy</a>
+        <a href="/about.html" class="hover:underline">About</a>
+      </div>
     </div>
   </footer>
 
