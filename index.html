@@ -54,7 +54,7 @@
             button.classList.add('opacity-70', 'cursor-not-allowed');
       
             try {
-              const res = await fetch('/functions/v1/signup', {
+              const res = await fetch('https://nqcrranamhojpxydzmat.supabase.co/functions/v1/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email })
