@@ -4,119 +4,247 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How It Works – Explain My Scan</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-black text-white px-6 py-4 flex justify-between items-center">
-    <a href="/" class="flex items-center space-x-2">
-      <img src="https://cloudstoryco.github.io/explainmyscanstatic/images/ems-white2.png" alt="Logo" class="h-8">
-      <span class="font-semibold text-xl">Explain My Scan</span>
+<body>
+  
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">`
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img style="width:180px" src="https://cloudstoryco.github.io/explainmyscanstatic/images/ems-white2.png" alt="Logo">
+        </a>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 text-sky-800 hover:text-sky-800" href="/">Home</a>
+        <a class="mr-5 text-sky-800 hover:text-sky-800" href="/index.html#why">Why</a>
+        <a class="mr-5 text-sky-800 hover:text-sky-800" href="/how-it-works.html">How it works</a>
+ 
+        </nav>
+        <a  href="https://explainmyscan.com/login" class="inline-flex items-center bg-sky-700 border-0 py-1 px-3 focus:outline-none hover:bg-sky-800 rounded text-white mt-4 md:mt-0" >Login
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
     </a>
-    <nav class="space-x-4 text-sm sm:text-base">
-      <a href="/" class="hover:underline">Home</a>
-      <a href="/#why" class="hover:underline">Why</a>
-      <a href="/how-it-works.html" class="underline font-semibold">How it Works</a>
-      <a href="/login.html" class="bg-white text-black px-4 py-1 rounded shadow hover:bg-gray-100 transition">Login</a>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main class="max-w-3xl mx-auto py-12 px-6">
-    <h1 class="text-4xl font-bold mb-6">How It Works</h1>
-
-    <p class="mb-6 text-lg">
-      This page walks you through how to use the service and answers common questions.
-    </p>
-
-    <hr class="border-gray-300 my-6">
-
-    <h2 class="text-2xl font-semibold mb-4">How do I use the service?</h2>
-    <ol class="list-decimal list-inside space-y-2 mb-6 text-gray-800">
-      <li><strong>Sign in</strong> using your email (no password needed)</li>
-      <li><strong>Upload</strong> your medical scan (JPEG, PNG, or DICOM)</li>
-      <li>Our AI analyzes and gives:
-        <ul class="list-disc list-inside ml-6">
-          <li>Key findings</li>
-          <li>Diagnostic insights</li>
-          <li>A plain-English explanation</li>
-        </ul>
-      </li>
-      <li><strong>Download or print</strong> the report — all within seconds</li>
-    </ol>
-
-    <h2 class="text-xl font-semibold mt-10 mb-2">Sample Report</h2>
-    <p class="mb-6">👉 <a class="text-blue-600 underline" href="https://cloudstoryco.github.io/explainmyscanstatic/ExplainMyScan_Analysis_Example.pdf" target="_blank">Download Sample PDF Report</a></p>
-
-    <h2 class="text-2xl font-semibold mb-4">Do I get free usage?</h2>
-    <ul class="list-disc list-inside mb-6 space-y-2 text-gray-800">
-      <li><strong>1 free scan analysis per month</strong></li>
-      <li>It resets based on your last upload date</li>
-      <li>No action needed — quota applied automatically</li>
-      <li>Unused free scans do <strong>not</strong> roll over</li>
-    </ul>
-
-    <h2 class="text-2xl font-semibold mt-10 mb-4">Want more reports?</h2>
-    <p class="mb-4">You can buy credits via the <strong>Payment</strong> page. Just choose your amount, currency is auto-detected, and pay via Stripe.</p>
-
-    <h2 class="text-2xl font-semibold mt-10 mb-4">How are rates calculated?</h2>
-    <p class="mb-2">Rates are auto-adjusted based on your IP location. Here’s a sample:</p>
-
-    <div class="overflow-x-auto mb-6">
-      <table class="min-w-full text-sm border border-gray-300">
-        <thead class="bg-gray-100">
-          <tr>
-            <th class="p-2 border">Country</th>
-            <th class="p-2 border">Currency</th>
-            <th class="p-2 border">Cost per Credit</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td class="p-2 border">United States</td><td class="p-2 border">USD</td><td class="p-2 border">1.00</td></tr>
-          <tr><td class="p-2 border">Singapore</td><td class="p-2 border">SGD</td><td class="p-2 border">1.00</td></tr>
-          <tr><td class="p-2 border">Malaysia</td><td class="p-2 border">MYR</td><td class="p-2 border">3.00</td></tr>
-          <tr><td class="p-2 border">India</td><td class="p-2 border">INR</td><td class="p-2 border">60.00</td></tr>
-          <tr><td class="p-2 border">Indonesia</td><td class="p-2 border">IDR</td><td class="p-2 border">10,000.00</td></tr>
-          <tr><td class="p-2 border">Thailand</td><td class="p-2 border">USD</td><td class="p-2 border">28.80</td></tr>
-        </tbody>
-      </table>
     </div>
+    </header>
 
-    <p class="mb-6 text-sm text-gray-500">💡 You’ll always see your local cost before checkout.</p>
+    <section class="text-gray-600 body-font overflow-hidden">
 
-    <h2 class="text-2xl font-semibold mb-4">Is my payment secure?</h2>
-    <ul class="list-disc list-inside space-y-2 mb-6 text-gray-800">
-      <li>🔒 Encrypted and PCI-compliant (Stripe Level 1)</li>
-      <li>✅ Processed securely via Stripe — no card data stored</li>
-      <li>🌐 End-to-end HTTPS encryption</li>
-    </ul>
+      
+      <div class="container px-8 md:px-16 lg:px-24 py-24 mx-auto">
+       
+            <!-- text - start -->
+    <div class="mb-10 md:mb-16 ">
+      <h1 class="mb-4 text-center text-3xl font-bold text-gray-800 md:mb-6 lg:text-5xl text-sky-800">How it works</h1>
 
-    <h2 class="text-2xl font-semibold mb-4">What happens to my data?</h2>
-    <ul class="list-disc list-inside space-y-2 mb-6 text-gray-800">
-      <li><strong>Zero storage by default</strong>: scans and results are not saved</li>
-      <li><strong>No tracking or profiling</strong>: we don’t use your data for training</li>
-      <li><strong>Enterprise options</strong> available for private deployments</li>
-    </ul>
 
-    <p class="mb-6 text-sm text-gray-600">
-      ✅ Individuals: full privacy<br>
-      🏥 Clinics: custom storage, region-specific compliance (GDPR, HIPAA)
-    </p>
-
-    <h2 class="text-2xl font-semibold mb-4">Other Questions?</h2>
-    <p>If you need help, just email us at <a href="mailto:support@explainmyscan.com" class="text-blue-600 underline">support@explainmyscan.com</a></p>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-black text-white text-center text-sm py-4 mt-10">
-    &copy; 2025 Explain My Scan. All rights reserved.
-    <div class="mt-2">
-      <a href="/terms.html" class="underline hover:text-gray-300">Terms</a> · 
-      <a href="/privacy.html" class="underline hover:text-gray-300">Privacy</a> · 
-      <a href="/about.html" class="underline hover:text-gray-300">About</a>
+      <p class="mx-auto max-w-screen-md text-center text-gray-700 text-lg md:text-xl lg:text-2xl">
+        This page walks you through how to use the service and answers common questions.
+      </p>
+      
     </div>
-  </footer>
+    <!-- text - end -->
 
+          <div class="-my-8 divide-y-2 divide-gray-100">
+            <div class="py-8 flex flex-wrap md:flex-nowrap">
+             
+              <div class="md:flex-grow">
+                 
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-sky-800 title-font mb-2">How do I use the service?</h2>
+                  <div class="leading-relaxed">
+                    <ol class="list-decimal list-inside">
+                      <li><strong>Sign in</strong> using your email (no password needed)</li>
+                      <li><strong>Upload</strong> your medical scan (JPEG, PNG, or DICOM)</li>
+                      <li>Our AI analyzes the image and produces:
+                        <ul class="list-disc list-inside ml-4">
+                          <li>Key findings</li>
+                          <li>Diagnostic insights</li>
+                          <li>A plain-English explanation</li>
+                        </ul>
+                      </li>
+                      <li><strong>Download or print</strong> the report — all within seconds</li>
+                    </ol>
+                  </div>
+                </div>
+                
+                <hr class="my-6" />
+                
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-sky-800 title-font mb-2">Can you show me what an analysis report looks like?</h2>
+                  <div class="leading-relaxed">
+                    Here's a sample result in English browser:<br />
+                    👉 <a href="https://cloudstoryco.github.io/explainmyscanstatic/ExplainMyScan_Analysis_Example.pdf" class="text-blue-600 underline font-semibold">Download Sample PDF Report</a>
+                  </div>
+                  <div class="leading-relaxed">
+                    ... and a sample result in Bahasa Indonesia browser:<br />
+                    👉 <a href="https://cloudstoryco.github.io/explainmyscanstatic/ExplainMyScan_Contoh_Analysis.pdf" class="text-blue-600 underline font-semibold">Download Sample PDF Report</a>
+                  </div>
+                </div>
+                
+                <hr class="my-6" />
+                
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-sky-800 title-font mb-2">Do I get free usage?</h2>
+                  <div class="leading-relaxed">
+                    <p>Yes. Every registered user receives:</p>
+                    <ul class="list-disc list-inside">
+                      <li><strong>1 free scan analysis per month</strong></li>
+                      <li>It resets every 1 month from your last upload</li>
+                      <li>Free quota is automatically applied — no action needed</li>
+                      <li>Unused free reports do <strong>not</strong> roll over to the next month</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <hr class="my-6" />
+                
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-sky-800 title-font mb-2">What if I want more reports?</h2>
+                  <div class="leading-relaxed">
+                    <p>You can purchase additional credits from the <strong>Payment</strong> or <strong>Buy Credit</strong> page:</p>
+                    <ul class="list-disc list-inside">
+                      <li>Choose the number of credits (minimum 5)</li>
+                      <li>The system auto-detects your local currency</li>
+                      <li>Proceed to secure payment via Stripe</li>
+                      <li>Credits are added to your account immediately after successful payment</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <hr class="my-6" />
+                
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-sky-800 title-font mb-2">How are rates calculated?</h2>
+                  <div class="leading-relaxed">
+                    <p>Credit prices vary slightly depending on your location and currency.<br />Here’s how it works:</p>
+                    <ul class="list-disc list-inside">
+                      <li>The system detects the country from where you access the website from the IP Address</li>
+                      <li>Your currency (e.g. MYR, SGD, USD) is auto-selected</li>
+                      <li>Rates are based on a predefined cost-per-credit in our database</li>
+                      <li>If we don’t have rate for your country, we will default to USD rate</li>
+                    </ul>
+                    <h3 class="mt-4 font-semibold">Example (as of now):</h3>
+                    <div class="overflow-x-auto">
+                      <table class="min-w-full text-left text-sm border mt-2">
+                        <thead class="bg-gray-100 font-semibold">
+                          <tr><th class="border px-3 py-2">Country</th><th class="border px-3 py-2">Currency</th><th class="border px-3 py-2">Cost per Credit</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td class="border px-3 py-2">United States</td><td class="border px-3 py-2">USD</td><td class="border px-3 py-2">1.00</td></tr>
+                          <tr><td class="border px-3 py-2">Singapore</td><td class="border px-3 py-2">SGD</td><td class="border px-3 py-2">1.00</td></tr>
+                          <tr><td class="border px-3 py-2">Malaysia</td><td class="border px-3 py-2">MYR</td><td class="border px-3 py-2">3.00</td></tr>
+                          <tr><td class="border px-3 py-2">India</td><td class="border px-3 py-2">INR</td><td class="border px-3 py-2">60.00</td></tr>
+                          <tr><td class="border px-3 py-2">Indonesia</td><td class="border px-3 py-2">IDR</td><td class="border px-3 py-2">10,000.00</td></tr>
+                          <tr><td class="border px-3 py-2">Thailand</td><td class="border px-3 py-2">USD</td><td class="border px-3 py-2">28.80</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p class="mt-2 italic text-gray-600">💡 You’ll always see your local cost before checkout.</p>
+                  </div>
+                </div>
+                
+                <hr class="my-6" />
+                
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-sky-800 title-font mb-2">Is my payment secure?</h2>
+                  <div class="leading-relaxed">
+                    <p>Yes — your payment is 100% secure.</p>
+                    <p>We use Stripe, a world-leading payment platform trusted by millions of businesses including Amazon, Google, and Shopify.</p>
+                    <p>All payments are:</p>
+                    <ul class="list-disc list-inside">
+                      <li>🔒 Encrypted and PCI-compliant (Stripe is certified as a PCI Service Provider Level 1 — the highest level)</li>
+                      <li>✅ Processed on Stripe’s secure infrastructure — your card details never touch our servers</li>
+                      <li>🌐 Handled via HTTPS with end-to-end encryption</li>
+                    </ul>
+                    <p>We do not store any credit card information on our side. Stripe handles everything securely behind the scenes.</p>
+                  </div>
+                </div>
+                
+                <hr class="my-6" />
+                
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-sky-800 title-font mb-2">What happens to my data?</h2>
+                  <div class="leading-relaxed">
+                    <p>We take your privacy seriously.</p>
+                    <ul class="list-disc list-inside">
+                      <li><strong>We store zero data by default</strong><br />Once your scan is analyzed, neither the uploaded image nor the AI-generated result is stored in our system.</li>
+                      <li><strong>No tracking, no profiling</strong><br />Your usage is session-based, and we don’t use your scans to train models or build profiles.</li>
+                      <li><strong>Enterprise options available</strong><br />For clinics, hospitals, or radiology labs, we offer secure integration services that include:
+                        <ul class="list-disc list-inside ml-4">
+                          <li>Private data storage</li>
+                          <li>On-premise deployment</li>
+                          <li>Region-specific data residency compliance (e.g., PDPA, GDPR, HIPAA)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <p class="mt-2">
+                      ✅ Individual users enjoy complete data privacy.<br />
+                      🏥 Enterprise users benefit from custom data storage and security solutions.
+                    </p>
+                    <p>For more, visit our <a href="/pages/integration.py" class="text-blue-600 underline">Integration</a> page or <a href="mailto:support@explainmyscan.com" class="text-blue-600 underline">contact us</a>.</p>
+                  </div>
+                </div>
+                
+                <hr class="my-6" />
+                
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-sky-800 title-font mb-2">Other questions?</h2>
+                  <div class="leading-relaxed">
+                    If you have additional questions or need help, please <a href="mailto:support@explainmyscan.com" class="text-blue-600 underline">contact us via email</a>.  
+                    We typically respond within 1–2 business days.
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+           
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+             
+            <span class="ml-3 text-xl text-sky-800">Explain My Scan </span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2025 EMS -
+            <a href="/integration.html" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Integration</a> &#x2022;
+            <a href="/terms.html" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Terms</a> &#x2022;
+            <a href="/privacy.html" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Privacy</a> &#x2022;
+            <a href="/about.html" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">About</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+
+      
 </body>
 </html>
